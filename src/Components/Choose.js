@@ -24,26 +24,7 @@ export default function ChooseComponent() {
     }
     return (
         <>
-            <div classNameName="topbar">
-                <nav className="navbar bg-body-tertiary">
-                    <div className="container-fluid justify-content-center">
-                        <ul className="nav nav-pills nav-fill">
-                            <li className="nav-item">
-                                <a className="nav-link " aria-current="page" href="#">Active</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Much longer nav link</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link disabled">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+
             {
                 dataUS.map((value) => {
                     return (
@@ -71,7 +52,7 @@ export default function ChooseComponent() {
             </div>
 
             {
-                getBBC.map((value) => {
+                dataBBC.map((value) => {
                     return (
                         <div className="row my-4">
                             <div className="col col-md-8 ">
@@ -96,8 +77,9 @@ export default function ChooseComponent() {
                     onClick={getBBC}>fetch BBC news</button>
             </div>
 
+
             {
-                getGermany.map((value) => {
+                dataGmy.map((value) => {
                     return (
                         <div className="row my-4">
                             <div className="col col-md-8 ">

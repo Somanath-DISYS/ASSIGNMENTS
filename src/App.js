@@ -8,19 +8,17 @@ import ChooseComponent from "./Components/Choose";
 
 export default function App() {
   return (
-    <div>
-
-
+    <div >
+      <BrowserRouter>
       <NavbarComponent />
       <HeaderComponent />
-      <BrowserRouter>
         <Switch>
-          <Route path='/' exact component={HomeComponent} />
-          <Route path='/Top' exact component={TopComponent} />
-          <Route path='/Choose' exact component={ChooseComponent} />
+          <Route path='/' exact component={HomeComponent} ></Route>
+          <Route path='/Top' exact component={TopComponent} ></Route>
+          <Route path='/Choose' exact component={ChooseComponent} ></Route>
         </Switch>
-      </BrowserRouter>
       <TailerComponent />
+      </BrowserRouter>
     </div>
   );
 }
