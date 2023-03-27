@@ -7,7 +7,7 @@ export default function NavbarComponent() {
     return (
         <div>
             <nav className="navbar navbar-expand bg-light ">
-                <div className="ms-auto me-auto">
+                <div className="ms-auto me-auto " >
                     <ul className="navbar-nav">
                         <li className="nav-item">NewsAPI</li>
                         <li className="nav-item">
