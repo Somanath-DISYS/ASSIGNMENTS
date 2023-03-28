@@ -7,7 +7,7 @@ export default function NavbarComponent() {
 
     return (
         <div>
-            <nav className="navbar navbar-expand bg-secondary ">
+            <nav className="navbar navbar-expand bg-light ">
                 <div className="ms-auto me-auto " >
                     <ul className="navbar-nav">
                   
@@ -17,7 +17,7 @@ export default function NavbarComponent() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/Top' className="nav-link active mx-3">
+                            <Link to='/Top'  id="toop" className="nav-link active mx-3">
                                 <i className="bi bi-newspaper"></i>Top Headlines
                             </Link>
                         </li>

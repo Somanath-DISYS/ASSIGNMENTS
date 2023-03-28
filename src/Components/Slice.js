@@ -18,21 +18,22 @@ export default function HomeComponent() {
             <div className="container">
 
                 {
-                    data.map((value) => {
+                    data.slice(1,11).map((value) => {
                         return (
-                            <div className="row my-4">
-                                <div className="col col-md-8 ">
-                                    <div className="card">
-                                        <img className="card-img-top" src={value.urlToImage} alt="images" />
-
-                                        <div className="card-body">
-                                            <h5 className="card-value.{value.title}">{value.title}</h5>
-                                            <p>{value.description}</p>
-                                            <a href="#" className="btn btn-primary btn-sm">
-                                                Mark
-                                            </a>
+                            <div className="container my-4">
+                                <div className="row">
+                                    <div className="col-sm-6 mb-3 mb-sm-0">
+                                        <div className="card">
+                                            <div className="card-body">
+                                                <img src={value.urlToImage} alt="" width="350" height="200" />
+                                                <h5 className="card-title">{value.title}</h5>
+                                                <p className="card-text">{value.description}</p>
+                                                
+                      <button className="btn btn-primary">Mark to read later</button>
+                                            </div>
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                         )

@@ -24,86 +24,87 @@ export default function ChooseComponent() {
     }
     return (
         <>
+            <div className="container justify-content-center">
 
-            {
-                dataUS.map((value) => {
-                    return (
-                        <div className="row my-4">
-                            <div className="col col-md-8 ">
-                                <div className="card">
-                                    <img className="card-img-top" src={value.urlToImage} alt="images" />
+                {
+                    dataUS.slice(1,12).map((value) => {
+                        return (
+                            <div className="row my-4">
+                                <div className="col col-md-8 ">
+                                    <div className="card">
+                                        <img className="card-img-top" src={value.urlToImage} alt="images" />
 
-                                    <div className="card-body">
-                                        <h5 className="card-value.{value.title}">{value.title}</h5>
-                                        <p>{value.description}</p>
-                                        <a href="#" className="btn btn-primary btn-sm">
-                                            Mark
-                                        </a>
+                                        <div className="card-body">
+                                            <h5 className="card-value.{value.title}">{value.title}</h5>
+                                            <p>{value.description}</p>
+                                            <a href="#" className="btn btn-primary btn-sm">
+                                                Mark
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                })
-            }
-            <div className="container my-3">
-                <button className='btn btn-primary'
-                    onClick={getUS}>fetch US news</button>
-            </div>
+                        )
+                    })
+                }
+                <div className="container my-3">
+                    <button className='btn btn-primary'
+                        onClick={getUS}>fetch US news</button>
+                </div>
 
-            {
-                dataBBC.map((value) => {
-                    return (
-                        <div className="row my-4">
-                            <div className="col col-md-8 ">
-                                <div className="card">
-                                    <img className="card-img-top" src={value.urlToImage} alt="images" />
+                {
+                    dataBBC.slice(1,12).map((value) => {
+                        return (
+                            <div className="row my-4">
+                                <div className="col col-md-8 ">
+                                    <div className="card">
+                                        <img className="card-img-top" src={value.urlToImage} alt="images" />
 
-                                    <div className="card-body">
-                                        <h5 className="card-value.{value.title}">{value.title}</h5>
-                                        <p>{value.description}</p>
-                                        <a href="#" className="btn btn-primary btn-sm">
-                                            Mark
-                                        </a>
+                                        <div className="card-body">
+                                            <h5 className="card-value.{value.title}">{value.title}</h5>
+                                            <p>{value.description}</p>
+                                            <a href="#" className="btn btn-primary btn-sm">
+                                                Mark
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                })
-            }
-            <div className="container my-3">
-                <button className='btn btn-primary'
-                    onClick={getBBC}>fetch BBC news</button>
-            </div>
+                        )
+                    })
+                }
+                <div className="container my-3">
+                    <button className='btn btn-primary'
+                        onClick={getBBC}>fetch BBC news</button>
+                </div>
 
 
-            {
-                dataGmy.map((value) => {
-                    return (
-                        <div className="row my-4">
-                            <div className="col col-md-8 ">
-                                <div className="card">
-                                    <img className="card-img-top" src={value.urlToImage} alt="images" />
+                {
+                    dataGmy.slice(1,12).map((value) => {
+                        return (
+                            <div className="row my-4">
+                                <div className="col col-md-8 ">
+                                    <div className="card">
+                                        <img className="card-img-top" src={value.urlToImage} alt="images" />
 
-                                    <div className="card-body">
-                                        <h5 className="card-value.{value.title}">{value.title}</h5>
-                                        <p>{value.description}</p>
-                                        <a href="#" className="btn btn-primary btn-sm">
-                                            Mark
-                                        </a>
+                                        <div className="card-body">
+                                            <h5 className="card-value.{value.title}">{value.title}</h5>
+                                            <p>{value.description}</p>
+                                            <a href="#" className="btn btn-primary btn-sm">
+                                                Mark
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                })
-            }
-            <div className="container my-3">
-                <button className='btn btn-primary'
-                    onClick={getGermany}>fetch Germany news</button>
+                        )
+                    })
+                }
+                <div className="container my-3">
+                    <button className='btn btn-primary'
+                        onClick={getGermany}>fetch Germany news</button>
+                </div>
             </div>
-
         </>
     )
 }

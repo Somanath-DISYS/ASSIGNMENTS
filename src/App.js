@@ -8,7 +8,7 @@ import ChooseComponent from "./Components/Choose";
 
 export default function App() {
   return (
-    <div >
+    <div className="bg-secondary" >
       <BrowserRouter>
       <NavbarComponent />
       <HeaderComponent />
